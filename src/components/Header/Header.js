@@ -1,11 +1,22 @@
 import React from "react";
+import styled from "styled-components";
+import * as components from "../../components/componentList";
 
-const Header = () => {
+const Header = styled.header`
+  background: gray;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 10vh;
+`;
+
+export default props => {
   return (
-    <header>
-      <h1>hEADER</h1>
-    </header>
+    <Header>
+      <h1>LOGO</h1>
+      <components.Navbar>
+        <components.NavItem name="LOG-IN" />
+      </components.Navbar>
+    </Header>
   );
 };
-
-export default Header;
