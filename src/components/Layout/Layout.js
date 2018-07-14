@@ -6,14 +6,17 @@ const Layout = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  background: url(../img/Logo.png);
+  align-items: center;
 `;
 
 export default props => {
   return (
     <Layout>
       <components.Header />
-      <components.Main />
+      <components.Main>
+        {/* <components.Home /> */}
+        <components.ImageModule />
+      </components.Main>
       <components.Footer />
     </Layout>
   );
