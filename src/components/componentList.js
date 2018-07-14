@@ -1,13 +1,14 @@
 import Layout from "./Layout/Layout";
-import Header from "./Header/Header";
-import Main from "./Main/Main";
-import Footer from "./Footer/Footer";
+import Header from "./Layout/Header";
+import Main from "./Layout/Main";
+import Footer from "./Layout/Footer";
 import Navbar from "./UI/Navbar";
-import NavItem from "./UI/NavItem";
-import Home from "../components/Main/Home";
+import Home from "../components/Home/Home";
 import ImageModule from "../components/ImageModule/ImageModule";
 import Particles from "../components/UI/Particles";
-import ImageContainer from "../components/UI/imageContainer";
+import ImageContainer from "../components/ImageModule/imageContainer";
+import Login from "../components/Login/Login";
+import InvalidPath from "./UI/InvalidPath";
 
 export {
   Header,
@@ -15,9 +16,10 @@ export {
   Main,
   Layout,
   Navbar,
-  NavItem,
   Home,
   ImageModule,
   Particles,
-  ImageContainer
+  ImageContainer,
+  Login,
+  InvalidPath
 };

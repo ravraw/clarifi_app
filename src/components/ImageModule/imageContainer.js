@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 const ImageContainer = styled.div`
-  border: 1px solid black;
   position: relative;
-  display: flex;
 
   > div {
     position: absolute;

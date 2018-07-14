@@ -1,10 +1,12 @@
 // import React from "react";
 import styled from "styled-components";
 
-const Navbar = styled.ul`
+const Navbar = styled.nav`
+  width: 40%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
   list-style: none;
-  width: 80%;
 `;
 export default Navbar;
