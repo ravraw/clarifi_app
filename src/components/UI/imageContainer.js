@@ -3,6 +3,7 @@ import styled from "styled-components";
 const ImageContainer = styled.div`
   border: 1px solid black;
   position: relative;
+  display: flex;
 
   > div {
     position: absolute;
@@ -18,14 +19,12 @@ export default ({ imageSrc, faceCoordinates }) => {
           <div
             key={i}
             style={{
-              top: el.top,
-              right: el.right,
-              bottom: el.bottom,
-              left: el.left
+              top: el.topRow,
+              right: el.rightCol,
+              bottom: el.bottomRow,
+              left: el.leftCol
             }}
-          >
-            hello
-          </div>
+          />
         );
       })
     : null;

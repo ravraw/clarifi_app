@@ -50,15 +50,16 @@ export default class ImageModule extends Component {
 
   calculateFaceCoordinates = response => {
     let inputImage = document.querySelector("#image");
-    let imageWidth = inputImage.width;
-    let imageHeight = inputImage.height;
+    let imageWidth = Number(inputImage.width);
+    let imageHeight = Number(inputImage.height);
     let coordinatesArray = response.outputs[0].data.regions.map(el => {
       let box = el.region_info.bounding_box;
+      console.log(box, imageWidth, imageHeight);
       return {
-        top: box.left_col * imageWidth,
-        right: box.top_row * imageHeight,
-        bottom: imageWidth - box.right_col * imageWidth,
-        left: imageHeight - box.bottom_row * imageHeight
+        leftCol: box.left_col * imageWidth,
+        topRow: box.top_row * imageHeight,
+        rightCol: imageWidth - box.right_col * imageWidth,
+        bottomRow: imageHeight - box.bottom_row * imageHeight
       };
     });
     console.log(coordinatesArray);
