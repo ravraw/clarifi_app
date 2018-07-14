@@ -6,6 +6,7 @@ const Layout = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
+  background: url(../img/Logo.png);
 `;
 
 export default props => {
