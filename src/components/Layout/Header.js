@@ -9,9 +9,10 @@ const Header = styled.header`
   justify-content: space-between;
   width: 100%;
   height: 10vh;
+  z-index: 100;
 `;
 
-export default props => {
+const Head = props => {
   return (
     <Header>
       <h1>LOGO</h1>
@@ -23,3 +24,4 @@ export default props => {
     </Header>
   );
 };
+export default Head;

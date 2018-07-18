@@ -10,20 +10,20 @@ const Layout = styled.div`
   align-items: center;
 `;
 
-const lay = props => {
+const Lay = props => {
   return (
     <Layout>
       <components.Header />
       <components.Main>
         <Switch>
+          <Route path="/" exact component={components.Home} />
           <Route path="/imageModule" component={components.ImageModule} />
           <Route path="/login" component={components.Login} />
-          <Route path="/" component={components.Home} exact />
-          <Route component={components.InvalidPath} />
+          {/* <Route path component={components.InvalidPath} /> */}
         </Switch>
       </components.Main>
       <components.Footer />
     </Layout>
   );
 };
-export default lay;
+export default Lay;
